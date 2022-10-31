@@ -1,2 +1,2 @@
-# reinwiese
-"Hof Reinwiese" Website
+# "Hof Reinwiese" - Website
+[Reinwiese.de](https://reinwiese.de/)
