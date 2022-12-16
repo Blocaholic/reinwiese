@@ -185,6 +185,16 @@ header {
   white-space: nowrap;
   font-size: 1.6rem;
   margin-bottom: 0;
+  border-top: 0.4rem solid rgba(82, 162, 48, 1);
+  border-bottom: 0.4rem solid rgba(82, 162, 48, 1);
+}
+
+.header__navLi--active {
+  border-bottom: 0.4rem solid hsl(102, 54%, 30%);
+}
+
+.header__navLi:hover {
+  border-top: 0.4rem solid hsl(102, 54%, 30%);
 }
 
 .header__navToggleButton {
@@ -223,7 +233,7 @@ header {
   }
 
   .header__navLi {
-    line-height: 5rem;
+    line-height: 4.2rem;
   }
 
   .header__navToggleButton {
