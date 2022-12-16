@@ -146,7 +146,7 @@ header {
 .header__brandImage {
   height: auto;
   width: clamp(5.4rem, 15vw, 12.2rem);
-  margin-right: 4vw;
+  margin-right: 25px;
 }
 
 .header__brandName {
