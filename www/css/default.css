@@ -190,11 +190,7 @@ header {
 }
 
 .header__navLi--active {
-  border-bottom: 0.4rem solid hsl(102, 54%, 30%);
-}
-
-.header__navLi:hover {
-  border-top: 0.4rem solid hsl(102, 54%, 30%);
+  text-decoration: underline;
 }
 
 .header__navToggleButton {
@@ -234,6 +230,15 @@ header {
 
   .header__navLi {
     line-height: 4.2rem;
+  }
+
+  .header__navLi--active {
+    text-decoration: none;
+    border-bottom: 0.4rem solid hsl(102, 54%, 30%);
+  }
+
+  .header__navLi:hover {
+    border-top: 0.4rem solid hsl(102, 54%, 30%);
   }
 
   .header__navToggleButton {
