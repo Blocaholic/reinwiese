@@ -255,6 +255,7 @@ header {
   .header__navLi {
     line-height: 4rem;
     padding: 0 0.8rem;
+    transition: all 0.3s;
   }
 
   .header__navLi--active {
@@ -262,7 +263,8 @@ header {
     border-bottom: 0.5rem solid var(--primary--dark);
   }
 
-  .header__navLi:hover {
+  .header__navLi:hover,
+  .header__navLi:active {
     border-top: 0.5rem solid var(--primary--dark);
   }
 
