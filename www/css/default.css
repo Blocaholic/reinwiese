@@ -368,6 +368,39 @@ footer {
   }
 }
 
+.button + .button {
+  margin-left: 3.2rem;
+}
+
+.button:link,
+.button:visited {
+  display: inline-block;
+  border: 0.2rem solid var(--primary--light);
+  border-radius: 0.9rem;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  margin-top: 2.4rem;
+  transition: all 0.2s;
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--primary--light);
+}
+
+.button-attention:link,
+.button-attention:visited {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.button-attention:hover,
+.button-attention:active {
+  background-color: var(--primary--dark);
+  border-color: var(--primary--dark);
+}
+
 #veggieBox__exampleImage {
   display: none;
 }
