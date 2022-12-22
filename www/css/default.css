@@ -349,6 +349,10 @@ footer {
   margin: 0 1.2rem;
 }
 
+.veggieBox h5 {
+  margin-top: 0;
+}
+
 .content__image {
   border-radius: 0.8rem;
   box-shadow: 0 2rem 3rem 0 var(--grey--light);
