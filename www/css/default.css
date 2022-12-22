@@ -59,13 +59,6 @@ main,
 h1,
 h2,
 h3,
-h4 {
-  white-space: nowrap;
-}
-
-h1,
-h2,
-h3,
 h4,
 h5 {
   margin-top: 4.8rem;
