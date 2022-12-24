@@ -400,15 +400,15 @@ footer {
   }
 }
 
-.button-attention:link,
-.button-attention:visited {
+.button--attention:link,
+.button--attention:visited {
   background-color: var(--primary);
   border-color: var(--primary);
   color: #eee;
 }
 
-.button-attention:hover,
-.button-attention:active {
+.button--attention:hover,
+.button--attention:active {
   background-color: var(--primary--dark);
   border-color: var(--primary--dark);
 }
