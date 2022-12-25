@@ -235,7 +235,7 @@ header {
   border-radius: 10px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 715px) {
   .header__navUl {
     display: flex;
     column-gap: 4.8rem;
