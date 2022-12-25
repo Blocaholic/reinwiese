@@ -339,6 +339,81 @@ footer {
   }
 }
 
+.form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.2rem;
+  margin-bottom: 6.4rem;
+  align-items: center;
+  max-width: 50rem;
+}
+
+.form label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 3.4vw, 2rem);
+  letter-spacing: 0.2rem;
+  line-height: 1.2;
+  color: var(--grey);
+}
+
+.form input {
+  font-size: inherit;
+  padding: 0.4rem 0.8rem;
+}
+
+.form__submitWrapper {
+  grid-column: 1 / 3;
+  text-align: right;
+}
+
+.form div {
+  white-space: nowrap;
+}
+
+#familienkiste,
+#standardkiste {
+  width: 3rem;
+}
+
+@media (max-width: 399px) {
+  .form .button {
+    width: 100%;
+  }
+
+  #vorname,
+  #nachname,
+  #email,
+  label[for='vorname'],
+  label[for='nachname'],
+  label[for='email'] {
+    grid-column: 1 / 3;
+  }
+
+  label[for='vorname'],
+  label[for='nachname'],
+  label[for='email'] {
+    margin-bottom: -1rem;
+  }
+
+  label[for='nachname'],
+  label[for='email'] {
+    margin-top: 1rem;
+  }
+
+  #email {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .form > *:nth-child(odd) {
+    display: flex;
+    justify-content: right;
+    justify-self: right;
+  }
+}
+
 .veggieBox {
   background-color: var(--primary--light);
   box-shadow: 0 2rem 3rem 0 var(--grey--light);
@@ -367,6 +442,7 @@ footer {
   }
 }
 
+.button,
 .button:link,
 .button:visited,
 .button:hover,
@@ -391,15 +467,16 @@ footer {
     margin-left: 3.2rem;
   }
 
+  .button,
   .button:link,
   .button:visited,
   .button:hover,
   .button:active {
     display: inline-block;
-    text-align: left;
   }
 }
 
+.button--attention,
 .button--attention:link,
 .button--attention:visited {
   background-color: var(--primary);

@@ -1,0 +1,42 @@
+<h1>Gemüsekisten-Abo</h1>
+<form action="/check"
+      method="post"
+      name="abo"
+      class="form">
+  <label for="vorname">Vorname</label>
+  <input type="text"
+         name="vorname"
+         id="vorname"
+         required>
+  <label for="nachname">Nachname</label>
+  <input type="text"
+         name="nachname"
+         id="nachname"
+         required>
+  <label for="email">E-Mail</label>
+  <input type="email"
+         name="email"
+         id="email"
+         required>
+  <input type="number"
+         name="standardkiste"
+         id="standardkiste"
+         min="0"
+         max="9"
+         value="1"
+         required>
+  <label for="standardkiste">Standardkiste(n)</label>
+  <input type="number"
+         name="familienkiste"
+         id="familienkiste"
+         min="0"
+         max="9"
+         value="0"
+         required>
+  <label for="familienkiste">Familienkiste(n)</label>
+  <div class="form__submitWrapper">
+    <input type="submit"
+           value="Jetzt vorbestellen"
+           class="button button--attention">
+  </div>
+</form>
