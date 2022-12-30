@@ -373,7 +373,7 @@ footer {
 
 #familienkiste,
 #standardkiste {
-  width: 3rem;
+  width: 6rem;
 }
 
 @media (max-width: 399px) {
