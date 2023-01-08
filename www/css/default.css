@@ -345,7 +345,7 @@ footer {
   gap: 1.2rem;
   margin-bottom: 6.4rem;
   align-items: center;
-  max-width: 50rem;
+  max-width: 70rem;
 }
 
 .form label {
@@ -374,6 +374,30 @@ footer {
 #familienkiste,
 #standardkiste {
   width: 6rem;
+}
+
+#hausnummer,
+#postleitzahl {
+  width: 8rem;
+}
+label[for='hausnummer'] {
+  width: 3.2rem;
+}
+
+div:has(#strasse),
+div:has(#ort) {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#strasse,
+#ort {
+  flex-grow: 1;
+}
+
+.datenschutzLink {
+  color: var(--primary);
 }
 
 @media (max-width: 399px) {
@@ -442,7 +466,7 @@ footer {
   }
 }
 
-.button,
+.form .button,
 .button:link,
 .button:visited,
 .button:hover,
@@ -476,7 +500,7 @@ footer {
   }
 }
 
-.button--attention,
+.form .button--attention,
 .button--attention:link,
 .button--attention:visited {
   background-color: var(--primary);
