@@ -1,4 +1,5 @@
 <?php
+include_once 'db.php';
 
 function main() {
   // HEADER
@@ -56,6 +57,11 @@ function handleOrder($input) {
 }
 
 function validateInput($input) {
+  if (!isset($input['datenschutz']) || $input['datenschutz'] !== '1') {
+    throw new FormValidationException(
+      'Die Datenschutzerklärung muss akzeptiert werden!'
+    );
+  }
   # EXISTS
   if (!isset($input['vorname'])) {
     throw new FormValidationException('Vorname fehlt');
@@ -128,10 +134,16 @@ function removeUnsafeChars($input) {
 }
 
 function insertIntoDB($data) {
-  # SQL-Verbindung herstellen
-  # Eintragen in Datenbank
-  # Eintrag überprüfen
-  return true;
+  $id = DB::insertOrder($data);
+  $inserted = DB::getOrder($id);
+  foreach ($data as $key => $value) {
+    if (!isset($inserted[$key]) || strval($inserted[$key]) !== $value) {
+      throw new DatabaseException(
+        'Der Datenbankeintrag stimmt nicht mit der Eingabe überein!'
+      );
+    }
+  }
+  return $inserted;
 }
 
 function showError($message) {
